@@ -11,46 +11,30 @@ public class Triangle {
         this.setSideB(sideB);
         this.setSideC(sideC);
     }
-    public int getSideA(){
+    public int getSideA()
+    {
+
         return this.sideA;
     }
-    public void setSideA(int sideA){
-        if(sideA>=1&&sideA<=20){
-            this.sideA=sideA;
-        } else
-        {
-            System.out.println("Invalid side");
-        }
+    public void setSideA(int sideA)
+    {
+        this.sideA=sideA;
     }
-    public int getSideB(){
+    public int getSideB()
+    {
         return this.sideB;
     }
-    public void setSideB(int sideB){
-        if(sideB>=1&&sideB<=20){
-            this.sideB=sideB;
-        } else
-        {
-            System.out.println("Invalid side");
-        }
+    public void setSideB(int sideB)
+    {
+        this.sideB=sideB;
     }
-    public int getSideC(){
+    public int getSideC()
+    {
         return this.sideC;
     }
-    public void setSideC(int sideC){
-        if(sideC>=1&&sideC<=20){
+    public void setSideC(int sideC)
+    {
             this.sideC=sideC;
-        } else
-        {
-            System.out.println("Invalid side");
-        }
-    }
-    private boolean isTriangle(){
-        if(sideA+sideB>sideC&&
-        sideB+sideC>sideA&&
-        sideC+sideA>sideB){
-            return true;
-        }
-        return false;
     }
     public boolean check(){
        return this.isTriangle();
